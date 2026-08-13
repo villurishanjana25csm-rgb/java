@@ -1,0 +1,26 @@
+package inheritance;
+
+class One{
+	int x =10;
+	float cal_si(float p, int t,float roi) {
+		float si = (p*t*roi)/100;
+		return si;
+	}
+}
+class Two extends One {
+	@Override
+	float cal_si(float p, int t,float roi) {
+		float si = (p*t*roi)/10;
+		return si;
+		}
+	void access() {
+		float result = cal_si(10000,3,23.2f);
+		System.out.println("Si value is:" + result);
+	
+}}
+public class Single {
+public static void main(String[] args) {
+	Two two = new Two();
+	two.access();
+}
+}

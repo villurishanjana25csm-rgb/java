@@ -25,7 +25,7 @@ class Demo implements I3 {
     }
 }
 
-public class Main {
+public class IextendsMulti {
     public static void main(String[] args) {
 
         Demo d = new Demo();

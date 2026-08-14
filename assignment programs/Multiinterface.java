@@ -31,7 +31,7 @@ class C1 extends C2 implements I1, I2, I3 {
     }
 }
 
-public class Main {
+public class Multiinterface {
     public static void main(String[] args) {
 
         C1 obj = new C1();

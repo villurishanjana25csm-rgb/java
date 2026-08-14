@@ -15,7 +15,7 @@ class C1 extends C2 implements I1 {
     }
 }
 
-public class Main {
+public class C1toC2 {
     public static void main(String[] args) {
 
         C1 obj = new C1();

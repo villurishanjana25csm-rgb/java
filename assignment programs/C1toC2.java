@@ -1,0 +1,26 @@
+interface I1 {
+    void show();
+}
+
+class C2 {
+    void display() {
+        System.out.println("C2 method");
+    }
+}
+
+class C1 extends C2 implements I1 {
+
+    public void show() {
+        System.out.println("I1 method");
+    }
+}
+
+public class C1toC2 {
+    public static void main(String[] args) {
+
+        C1 obj = new C1();
+
+        obj.display();
+        obj.show();
+    }
+}

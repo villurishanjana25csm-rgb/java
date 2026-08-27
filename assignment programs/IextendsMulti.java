@@ -1,0 +1,37 @@
+interface I1 {
+    void method2();
+}
+
+interface I2 {
+    void method3();
+}
+
+interface I3 extends I1, I2 {
+    void method1();
+}
+
+class Demo implements I3 {
+
+    public void method1() {
+        System.out.println("Method 1");
+    }
+
+    public void method2() {
+        System.out.println("Method 2");
+    }
+
+    public void method3() {
+        System.out.println("Method 3");
+    }
+}
+
+public class IextendsMulti {
+    public static void main(String[] args) {
+
+        Demo d = new Demo();
+
+        d.method1();
+        d.method2();
+        d.method3();
+    }
+}

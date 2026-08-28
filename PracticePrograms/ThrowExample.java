@@ -1,13 +1,26 @@
-public class ThrowExample {
+public class ThrowsExample {
 
-    public static void main(String[] args) {
-
-        int age = 15;
+    static void checkTheAge(int age) throws Exception {
 
         if (age < 18) {
-            throw new ArithmeticException("You are not readyto vote");
+            throw new Exception("You are not ready to vote");
         }
 
         System.out.println("You are ready to vote");
     }
+
+    public static void main(String[] args) {
+
+        try {
+            checkTheAge(15);
+
+        } catch (Exception e) {
+            System.out.println("Exception: " + e.getMessage());
+
+        } finally {
+            System.out.println("This block is always executed.");
+        }
+    }
 }
+
+

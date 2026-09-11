@@ -1,6 +1,5 @@
 package studentutility;
 import java.util.Scanner;
-
 public class StudentUtilityProgram {
 	// Part A: basics
 	public static void displayInfo(String name, int roll,int[] marks) {

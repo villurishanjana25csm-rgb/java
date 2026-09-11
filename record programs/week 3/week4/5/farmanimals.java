@@ -1,5 +1,5 @@
 class FarmAnimal {
-
+    
     String name;
     String stay;
     String food;

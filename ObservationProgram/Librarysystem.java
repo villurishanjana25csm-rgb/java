@@ -4,7 +4,6 @@ class Book {
     private String bookName;
     private String author;
     private double price;
-
     // const
     Book() {
         bookId = 0;

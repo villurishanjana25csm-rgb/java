@@ -11,12 +11,12 @@ class A{
 		 return items+count;
 	 }
 	 class B extends A {
-		 String name ="deekshitha";
+		 String name ="hello";
 		 private void name() {
 			 System.out.println("My name is:");
 		 }
 		 void sets() {
-			 name="deekshitha";
+			 name="hello";
 		 }
 		 String gets(){
 			 return name;

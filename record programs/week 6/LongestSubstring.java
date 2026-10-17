@@ -1,12 +1,9 @@
+package core_java;
 import java.util.Scanner;
 
-class Substring {
-    public static void main(String[] args) {
+public class LongestSubstring {
 
-        Scanner sc = new Scanner(System.in);
-
-        System.out.print("Enter a string: ");
-        String str = sc.nextLine();
+    static String findLongest(String str) {
 
         String longest = "";
 
@@ -25,14 +22,28 @@ class Substring {
 
                 current = current + ch;
 
-                // Update longest substring
+                // Store the longest substring
                 if (current.length() > longest.length()) {
                     longest = current;
                 }
             }
         }
 
-        System.out.println("Length = " + longest.length());
-        System.out.println("String = " + longest);
+        return longest;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a string: ");
+        String str = sc.nextLine();
+
+        String longest = findLongest(str);
+
+        System.out.println("Length: " + longest.length());
+        System.out.println("Longest substring: " + longest);
+
+        sc.close();
     }
 }

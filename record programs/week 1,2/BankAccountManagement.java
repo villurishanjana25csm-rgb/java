@@ -1,3 +1,4 @@
+package core_java;
 import java.util.Scanner;
 
 class Account {
